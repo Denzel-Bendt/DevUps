@@ -1,0 +1,4 @@
+C:\Users\DenzelBendt\OneDrive - Unexus\Documenten\Windesheim\Course\Devops\tests\sl2a.devops.tests\obj\Debug\net8.0\SL2A.DevOps.Tests.csproj.AssemblyReference.cache
+C:\Users\DenzelBendt\OneDrive - Unexus\Documenten\Windesheim\Course\Devops\tests\sl2a.devops.tests\obj\Debug\net8.0\SL2A.DevOps.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DenzelBendt\OneDrive - Unexus\Documenten\Windesheim\Course\Devops\tests\sl2a.devops.tests\obj\Debug\net8.0\SL2A.DevOps.Tests.csproj.CoreCompileInputs.cache
+C:\Users\DenzelBendt\OneDrive - Unexus\Documenten\Windesheim\Course\Devops\tests\sl2a.devops.tests\obj\Debug\net8.0\SL2A.DevOps.Tests.sourcelink.json
