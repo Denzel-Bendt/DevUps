@@ -1,0 +1,15 @@
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\bin\Debug\net9.0\Pacman _V2.exe
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\bin\Debug\net9.0\Pacman _V2.deps.json
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\bin\Debug\net9.0\Pacman _V2.runtimeconfig.json
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\bin\Debug\net9.0\Pacman _V2.dll
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\bin\Debug\net9.0\Pacman _V2.pdb
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\obj\Debug\net9.0\Pacman _V2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\obj\Debug\net9.0\Pacman _V2.AssemblyInfoInputs.cache
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\obj\Debug\net9.0\Pacman _V2.AssemblyInfo.cs
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\obj\Debug\net9.0\Pacman _V2.csproj.CoreCompileInputs.cache
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\obj\Debug\net9.0\Pacman _V2.sourcelink.json
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\obj\Debug\net9.0\Pacman _V2.dll
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\obj\Debug\net9.0\refint\Pacman _V2.dll
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\obj\Debug\net9.0\Pacman _V2.pdb
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\obj\Debug\net9.0\Pacman _V2.genruntimeconfig.cache
+C:\Users\DenzelBendt\source\repos\devups\Pacman _V2\obj\Debug\net9.0\ref\Pacman _V2.dll
