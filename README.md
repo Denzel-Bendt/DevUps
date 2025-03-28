@@ -1,4 +1,4 @@
-# SL2B DevOps Project
+# SL2A DevOps Project
 
 ![.NET CI](https://github.com/Denzel-Bendt/Devops/actions/workflows/dotnet.yml/badge.svg) (badgo moet nog aangemaakt worden)
 
