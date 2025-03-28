@@ -109,14 +109,14 @@ C:\Users\DenzelBendt\source\repos\Devops\Pacman_V2\Tests\obj\Debug\net8.0\Tests.
 C:\Users\DenzelBendt\source\repos\Devops\Pacman_V2\Tests\obj\Debug\net8.0\ref\Tests.dll
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Tests
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_Tests
-C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\testhost.exe
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\testhost.dll
-C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
-C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
-C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\Pacman _V2.deps.json
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\Pacman _V2.runtimeconfig.json
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\Pacman _V2.exe
+C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\testhost.exe
+C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\Tests.deps.json
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\Tests.runtimeconfig.json
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net8.0\Tests.dll
