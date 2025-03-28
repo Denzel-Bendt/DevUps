@@ -19,13 +19,13 @@ jobs:
         dotnet-version: 9.0.x
         
     - name: Restore dependencies
-      run: dotnet restore Pacman _V2.sln
+      run: dotnet restore "Pacman _V2.sln"
       
     - name: Build
-      run: dotnet build Pacman _V2.sln --no-restore -c Release
+      run: dotnet build "Pacman _V2.sln" --no-restore -c Release
       
     - name: Test
-      run: dotnet test Pacman _V2.sln --no-build --verbosity normal
+      run: dotnet test "Pacman _V2.sln" --no-build --verbosity normal
       
     - name: Docker Build
-      run: docker build -t Pacman _V2 .
+      run: docker build -t "Pacman _V2" .
