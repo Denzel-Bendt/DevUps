@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Tests\\Tests.csproj": {}
+    "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Pacman _V2\\Pacman _V2.csproj": {
+    "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Pacman _V2\\Pacman _V2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Pacman _V2\\Pacman _V2.csproj",
+        "projectUniqueName": "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Pacman _V2\\Pacman _V2.csproj",
         "projectName": "Pacman _V2",
-        "projectPath": "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Pacman _V2\\Pacman _V2.csproj",
+        "projectPath": "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Pacman _V2\\Pacman _V2.csproj",
         "packagesPath": "C:\\Users\\DenzelBendt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Pacman _V2\\obj\\",
+        "outputPath": "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Pacman _V2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Tests\\Tests.csproj": {
+    "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Tests\\Tests.csproj",
+        "projectUniqueName": "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Tests\\Tests.csproj",
+        "projectPath": "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Tests\\Tests.csproj",
         "packagesPath": "C:\\Users\\DenzelBendt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Tests\\obj\\",
+        "outputPath": "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Pacman _V2\\Pacman _V2.csproj": {
-                "projectPath": "C:\\Users\\DenzelBendt\\source\\repos\\devups\\Pacman _V2\\Pacman _V2.csproj"
+              "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Pacman _V2\\Pacman _V2.csproj": {
+                "projectPath": "C:\\Users\\DenzelBendt\\source\\repos\\DevUps\\Pacman _V2\\Pacman _V2.csproj"
               }
             }
           }
@@ -121,21 +121,23 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.10.0, )"
+              "version": "[17.13.0, )"
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.4, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.8.0, )"
+              "version": "[2.9.3, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.8.0, )"
+              "version": "[3.0.2, )"
             }
           },
           "imports": [

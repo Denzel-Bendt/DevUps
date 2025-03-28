@@ -7,9 +7,9 @@ COPY ["Pacman _V2/Pacman _V2.csproj", "Pacman _V2/"]
 COPY ["Pacman _V2.sln", "./"]
 RUN dotnet restore "Pacman _V2.sln"
 
-# Copy remaining files and build
+# Copy everything else and build
 COPY . .
-RUN dotnet build "Pacman _V2.sln" -c Release -o /app/build --no-restore
+RUN dotnet build "Pacman _V2/Pacman _V2.csproj" -c Release --no-restore
 
 # Publish stage
 FROM build AS publish
