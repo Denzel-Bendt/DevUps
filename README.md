@@ -1,6 +1,6 @@
 # SL2A DevOps Project
 
-![.NET CI](https://github.com/Denzel-Bendt/Devops/actions/workflows/dotnet.yml/badge.svg) (badgo moet nog aangemaakt worden)
+![.NET CI](https://github.com/Denzel-Bendt/Devops/actions/workflows/dotnet.yml/badge.svg) (badge moet nog aangemaakt worden)
 
 ## Project Beschrijving
 Dit project demonstreert DevOps praktijken voor het SL2A project.
@@ -12,5 +12,5 @@ Dit project demonstreert DevOps praktijken voor het SL2A project.
 
 ## Docker
 ```bash
-docker build -t Pacman _V2 .
-docker run -it --rm Pacman _V2
+docker build -t pacman .
+docker run -it --rm pacman
