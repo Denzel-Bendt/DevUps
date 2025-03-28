@@ -8,8 +8,8 @@ C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net9.0\testhost.exe
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net9.0\xunit.runner.visualstudio.testadapter.dll
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net9.0\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net9.0\xunit.runner.utility.netcoreapp10.dll
-C:\Users\DenzelBendt\source\repos\DevUps\Tests\bin\Debug\net9.0\Tests.deps.json
-C:\Users\DenzelBendt\source\repos\DevUps\Tests\bin\Debug\net9.0\Tests.runtimeconfig.json
+C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net9.0\Tests.deps.json
+C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net9.0\Tests.runtimeconfig.json
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net9.0\Tests.dll
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net9.0\Tests.pdb
 C:\Users\DenzelBendt\source\repos\devups\Tests\bin\Debug\net9.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
@@ -96,9 +96,9 @@ C:\Users\DenzelBendt\source\repos\devups\Tests\obj\Debug\net9.0\Tests.csproj.Ass
 C:\Users\DenzelBendt\source\repos\devups\Tests\obj\Debug\net9.0\Tests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\DenzelBendt\source\repos\devups\Tests\obj\Debug\net9.0\Tests.csproj.CoreCompileInputs.cache
 C:\Users\DenzelBendt\source\repos\devups\Tests\obj\Debug\net9.0\Tests.sourcelink.json
-C:\Users\DenzelBendt\source\repos\DevUps\Tests\obj\Debug\net9.0\Tests.csproj.Up2Date
+C:\Users\DenzelBendt\source\repos\devups\Tests\obj\Debug\net9.0\Tests.csproj.Up2Date
 C:\Users\DenzelBendt\source\repos\devups\Tests\obj\Debug\net9.0\Tests.dll
 C:\Users\DenzelBendt\source\repos\devups\Tests\obj\Debug\net9.0\refint\Tests.dll
 C:\Users\DenzelBendt\source\repos\devups\Tests\obj\Debug\net9.0\Tests.pdb
-C:\Users\DenzelBendt\source\repos\DevUps\Tests\obj\Debug\net9.0\Tests.genruntimeconfig.cache
-C:\Users\DenzelBendt\source\repos\DevUps\Tests\obj\Debug\net9.0\ref\Tests.dll
+C:\Users\DenzelBendt\source\repos\devups\Tests\obj\Debug\net9.0\Tests.genruntimeconfig.cache
+C:\Users\DenzelBendt\source\repos\devups\Tests\obj\Debug\net9.0\ref\Tests.dll

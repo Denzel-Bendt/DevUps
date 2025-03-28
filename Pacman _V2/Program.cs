@@ -1,4 +1,6 @@
 ﻿using Pacman_V2;
+using System;
+using System.Runtime.InteropServices; // For OS detection
 
 namespace Pacman__V2
 {
@@ -8,10 +10,20 @@ namespace Pacman__V2
         {
             try
             {
-                Console.Title = "PACMAN";
-                Console.WindowWidth = 60;
-                Console.WindowHeight = 30;
-                Console.CursorVisible = false;
+                // Only set Windows-specific properties if running on Windows
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                {
+                    Console.Title = "PACMAN";
+                    Console.WindowWidth = 60;
+                    Console.WindowHeight = 30;
+                    Console.CursorVisible = false;
+                }
+                else
+                {
+                    Console.WriteLine("Running on non-Windows system - some display features disabled");
+                }
+
+                // UTF-8 encoding works cross-platform
                 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
                 var game = new Game();
@@ -29,7 +41,10 @@ namespace Pacman__V2
             }
             finally
             {
-                Console.CursorVisible = true;
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                {
+                    Console.CursorVisible = true;
+                }
             }
         }
     }
