@@ -28,5 +28,5 @@ RUN curl -fsSL https://goss.rocks/install | sh
 
 FROM runtime AS test
 COPY --from=goss /usr/local/bin/goss /usr/local/bin/goss
-COPY infra-tests/goss.yaml /goss.yaml
+COPY Tests/infra-tests/goss.yaml /goss.yaml
 RUN goss validate
