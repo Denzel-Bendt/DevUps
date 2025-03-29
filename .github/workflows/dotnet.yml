@@ -30,11 +30,16 @@ jobs:
     - name: Docker Build
       run: docker build -t "pacman" .
 
-      # Aanpassingen vanaf week 4
     - name: Generate Code Coverage Report
       run: |
             dotnet test "Pacman _V2.sln" --no-build --verbosity normal --collect:"XPlat Code Coverage" --settings coverlet.runsettings
   
+    - name: Check if TestResults directory exists
+      run: |
+            if [ ! -d "tests/TestResults" ]; then
+              echo "TestResults directory does not exist"; exit 1;
+            fi
+
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v3
       with:
