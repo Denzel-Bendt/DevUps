@@ -20,3 +20,13 @@ FROM mcr.microsoft.com/dotnet/runtime:9.0 AS runtime
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Pacman _V2.dll"]
+
+# GOSS test stage
+FROM alpine:latest AS goss
+RUN apk add --no-cache curl
+RUN curl -fsSL https://goss.rocks/install | sh
+
+FROM runtime AS test
+COPY --from=goss /usr/local/bin/goss /usr/local/bin/goss
+COPY infra-tests/goss.yaml /goss.yaml
+RUN goss validate

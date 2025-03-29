@@ -1,0 +1,4 @@
+file:
+  "/app/Pacman _V2.dll":
+    exists: true
+    mode: "0644"
