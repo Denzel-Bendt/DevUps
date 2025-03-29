@@ -29,7 +29,7 @@ RUN apt-get update && \
     chmod +x /usr/local/bin/goss
 
 FROM runtime AS test
-WORKDIR /tests  # <-- Changed: Set dedicated working directory
+WORKDIR /Tests  # <-- Changed: Set dedicated working directory
 COPY Tests/infra-tests/goss.yaml ./  # <-- Changed: Copy to working directory
 COPY --from=goss /usr/local/bin/goss /usr/local/bin/goss  # <-- Added: Ensure goss is available
 RUN goss validate  # <-- Now looks for ./goss.yaml in /tests
