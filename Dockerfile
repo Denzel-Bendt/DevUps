@@ -27,6 +27,5 @@ RUN apk add --no-cache curl
 RUN curl -fsSL https://goss.rocks/install | sh
 
 FROM runtime AS test
-COPY --from=goss /usr/local/bin/goss /usr/local/bin/goss
 COPY Tests/infra-tests/goss.yaml /goss.yaml
 RUN goss validate
