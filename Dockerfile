@@ -29,4 +29,6 @@ RUN curl -fsSL https://goss.rocks/install | sh
 FROM runtime AS test
 COPY --from=goss /usr/local/bin/goss /usr/local/bin/goss
 COPY Tests/infra-tests/goss.yaml /goss.yaml
+# Add a check before running goss validate
+RUN if [ -f /goss.yaml ]; then goss validate; else echo "goss.yaml not found"; exit 1; fi
 RUN goss validate
