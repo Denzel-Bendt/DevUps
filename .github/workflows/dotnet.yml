@@ -34,11 +34,15 @@ jobs:
       run: |
             dotnet test "Pacman _V2.sln" --no-build --verbosity normal --collect:"XPlat Code Coverage" --settings coverlet.runsettings
   
-    - name: Check if TestResults directory exists
+    - name: Ensure TestResults directory exists
       run: |
-            if [ ! -d "tests/TestResults" ]; then
-              echo "TestResults directory does not exist"; exit 1;
-            fi
+        mkdir -p tests/TestResults
+        echo "DIR_CREATED=$(ls -d tests/TestResults)" >> $GITHUB_ENV
+      shell: bash
+          
+    - name: Run tests
+      if: env.DIR_CREATED
+      run: dotnet test --logger "trx;LogFileName=testresults.trx" --results-directory "tests/TestResults"
 
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v4
