@@ -27,5 +27,7 @@ RUN apk add --no-cache curl
 RUN curl -fsSL https://goss.rocks/install | sh
 
 FROM runtime AS test
-COPY Tests/infra-tests/goss.yaml /goss.yaml
-RUN goss validate
+WORKDIR /tests  # <-- Changed: Set dedicated working directory
+COPY Tests/infra-tests/goss.yaml ./  # <-- Changed: Copy to working directory
+COPY --from=goss /usr/local/bin/goss /usr/local/bin/goss  # <-- Added: Ensure goss is available
+RUN goss validate  # <-- Now looks for ./goss.yaml in /tests
