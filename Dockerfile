@@ -22,9 +22,11 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Pacman _V2.dll"]
 
 # GOSS test stage
-FROM alpine:latest AS goss
-RUN apk add --no-cache curl
-RUN curl -fsSL https://goss.rocks/install | sh
+FROM ubuntu:20.04 as goss
+RUN apt-get update && \
+    apt-get install -y curl && \
+    curl -L https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-linux-amd64 -o /usr/local/bin/goss && \
+    chmod +x /usr/local/bin/goss
 
 FROM runtime AS test
 WORKDIR /tests  # <-- Changed: Set dedicated working directory
