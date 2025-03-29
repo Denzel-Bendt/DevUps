@@ -15,21 +15,25 @@ RUN dotnet build "Pacman _V2/Pacman _V2.csproj" -c Release --no-restore
 FROM build AS publish
 RUN dotnet publish "Pacman _V2/Pacman _V2.csproj" -c Release -o /app/publish --no-build
 
-# Runtime stage (use RUNTIME, not ASP.NET)
+# Runtime stage
 FROM mcr.microsoft.com/dotnet/runtime:9.0 AS runtime
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Pacman _V2.dll"]
 
-# GOSS test stage
-FROM ubuntu:20.04 as goss
-RUN apt-get update && \
-    apt-get install -y curl && \
-    curl -L https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-linux-amd64 -o /usr/local/bin/goss && \
+# GOSS installation stage (simplified)
+FROM alpine:latest AS goss-installer
+RUN apk add --no-cache curl && \
+    curl -fsSL https://github.com/aelsabbahy/goss/releases/latest/download/goss-linux-amd64 -o /usr/local/bin/goss && \
     chmod +x /usr/local/bin/goss
 
+# Test stage
 FROM runtime AS test
-WORKDIR /Tests  # <-- Changed: Set dedicated working directory
-COPY Tests/infra-tests/goss.yaml ./  # <-- Changed: Copy to working directory
-COPY --from=goss /usr/local/bin/goss /usr/local/bin/goss  # <-- Added: Ensure goss is available
-RUN goss validate  # <-- Now looks for ./goss.yaml in /tests
+WORKDIR /tests
+# Copy goss binary first
+COPY --from=goss-installer /usr/local/bin/goss /usr/local/bin/goss
+# Then copy test files
+COPY Tests/infra-tests/goss.yaml .
+# Verify goss is available and test file exists
+RUN goss --version && ls -la && \
+    goss validate
